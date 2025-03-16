@@ -8,4 +8,7 @@ public interface CrudService<T, ID> {
     Optional<T> findById(ID id);
     List<T> findAll();
     void deleteById(ID id);
+    boolean existsById(ID id);
+    void delete(T entity);
+    List<T> saveAll(List<T> entities);
 } 
